@@ -2,3 +2,16 @@
 x<-c(1,2,3,4)
 y<-c(2,1,4,5)
 ifelse(x<y, x, y)
+
+#if else 조건문2
+ifelse(sum(x-y) >0, "positive", ifelse(sum(x-y)<0, "negative", "zero"))
+
+#switch
+x<-c(1,2,3,4)
+type<-"var"
+switch(type,mean=mean(x),median=median(x),sum=sum(x),var=var(x))
+
+#switch2
+switch(1,mean(x),sum(x),var(x))
+[1] 2.5
+
